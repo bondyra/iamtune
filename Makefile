@@ -27,8 +27,8 @@ install:          ## Install the project in dev mode.
 .PHONY: fmt
 fmt:              ## Format code using black & isort.
 	$(ENV_PREFIX)isort iamtune/
-	$(ENV_PREFIX)black -l 79 iamtune/
-	$(ENV_PREFIX)black -l 79 tests/
+	$(ENV_PREFIX)black -l 120 iamtune/
+	$(ENV_PREFIX)black -l 120 tests/
 
 .PHONY: lint
 lint:             ## Run pep8, black, mypy linters.
